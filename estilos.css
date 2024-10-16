@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+.ancho{
+    max-width: 1200px;
+    /* border: 2px red solid; */
+    margin: auto;
+}
+
+header{
+    background-color: #ccc  ;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+}
+
+.cabecera figure{
+    /* border: 1px red solid; */
+    max-width: 300px;
+}
+
+.cabecera img{
+    width: 100%;
+    display: block;
+}
+
+.cabecera a{
+    display: none;
+    padding: 10px ;
+    color: white;
+    background-color: #28567a ;
+    border-radius: 7px ;
+}
+
+.barra-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding: 10px;
+}
+
+.barra-nav a{
+    border: 3px #28567a solid;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #28567a;
+}
+
+.sec-pull{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px red solid; */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.sec-pull h1{
+    color: #cc9900;
+}
+
+.sec-pull figure{
+    max-width: 550px;
+    border: 1px #28567a solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sec-pull img{
+    width: 100%;
+    display: block;
+}
+.sec-pull article{
+    max-width: 550px;
+}
+
+.sec-pull a{
+    text-decoration: none;
+    /* border: 1px #28567a solid; */
+    padding: 15px 30px;
+    border-radius: 10px ;
+    background-color: #28567a;
+    color: white;
+}
+
+footer{
+    background-color: #28567a;
+    padding: 40px 80px ;
+}
+
+.pie-pagina{
+    color: white;
+    text-align: center;
+}
+/* -------------------------------------------- */
+
+@media (max-width: 768px) { 
+    .cabecera a{
+        display: block;
+    }
+    .ocultar{
+        display: none;
+    }
+    .barra-nav{
+        flex-direction: column;
+        /* border: 1px red solid; */
+    }
+    .barra-nav a{
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px #28567a dashed;
+    }
+    .sec-pull{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/c35572497d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="cabecera ancho">
+            <figure>
+                <img src="imagenes/imagenes/pullrequest-logo.svg" alt="">
+            </figure>
+
+            <div class="menusand" id="icon-menu">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="ocultar" id="box-menu">
+        <nav class="ancho barra-nav" >
+            <a href="#">Inicio</a>
+            <a href="#">Empresa</a>
+            <a href="#">Servicio</a>
+            <a href="#">Cliente</a>
+            <a href="#">Ubicacion</a>
+            <a href="#">Contactanos</a>
+        </nav>
+    </div>
+
+    <section class="ancho sec-pull">
+        <article>
+            <h1>Creacion de paginas web</h1>
+            <h5>Curso Basico de HTML5 y CSS3</h5>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At eaque magnam hic tempora, inventore ipsa dolorum iusto veniam omnis quod repudiandae? Dicta sit quibusdam porro amet doloribus obcaecati, eveniet ratione?</p>
+            <br>
+            <a href="#" id="btn-ver">Ver</a>
+        </article>
+        <figure id="foto">
+            <img src="imagenes/imagenes/foto_pullrequest.svg" alt="">
+        </figure>
+    </section>
+
+    <footer>
+        <div class="pie-pagina ancho">
+            <p>@LucianoChiChan</p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    $("#icon-menu").click(function(){
+        $("#box-menu").slideToggle();
+    });
+</script>
+</html>
